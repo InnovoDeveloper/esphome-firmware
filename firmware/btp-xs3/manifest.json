@@ -1,0 +1,16 @@
+{
+  "name": "Innovo BTP XIAOS3",
+  "version": "2025.06.07.2",
+  "home_assistant_domain": "esphome",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "ota": {
+        "md5": "140c14bc7e95af3095520ff6f26fdbe3",
+        "path": "https://github.com/InnovoDeveloper/esphome/raw/refs/heads/main/firmware/btp-xs3/btp-xs3.ota.bin",
+        "summary": "Update Innovo BTP XIAOS3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Innovo All-In-One Air Quality",
+  "version": "2025.03.292",
+  "home_assistant_domain": "esphome",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "ota": {
+        "md5": "ce46fdfb22d27ec0d084f77d29018022",
+        "path": "https://github.com/InnovoDeveloper/esphome/raw/refs/heads/main/firmware/airq-aio-xs3/airq-aio-xs3.ota.bin",
+        "summary": "Update Innovo AIO Air Quality"
+      }
+    }
+  ]
+}

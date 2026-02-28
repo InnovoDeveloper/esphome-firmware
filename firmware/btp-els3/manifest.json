@@ -1,0 +1,16 @@
+{
+  "name": "Innovo Blue Tooth Proxy ELS3",
+  "version": "2025.05.27",
+  "home_assistant_domain": "esphome",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "ota": {
+        "md5": "e21d113c6789c9f81110f380dc497230",
+        "path": "https://github.com/InnovoDeveloper/esphome/raw/refs/heads/main/firmware/btp-els3/btp-els3.ota.bin",
+        "summary": "Update Innovo BTP ELS3"
+      }
+    }
+  ]
+}
