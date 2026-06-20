@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.20.03",
+  "version": "2026.06.20.04",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "c57030fbb8c12c4a4af1973d6b62d342",
+        "md5": "6d4a47f8ded2fc23824852b16ae8c22c",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury - RGB status indicator, Improv BLE onboarding, 3-min OTA check"
+        "summary": "Innovo Redbox Fury 2026.06.20.04 - live OTA test build"
       }
     }
   ]
