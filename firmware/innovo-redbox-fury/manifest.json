@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.20.04",
+  "version": "2026.06.20.06",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "6d4a47f8ded2fc23824852b16ae8c22c",
+        "md5": "f91a66a9e8c28f1b24ba9fd7fc1fa32d",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.20.04 - live OTA test build"
+        "summary": "Innovo Redbox Fury 2026.06.20.06 - creds-persistence fix validation (OTA should keep WiFi)"
       }
     }
   ]
