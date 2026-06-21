@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.20.09",
+  "version": "2026.06.20.10",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "5c8b44a2d558f09baa5f6719718df0ad",
+        "md5": "f9d0537f030e9c57b4b3735a4144268b",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.20.09 - Attached Module select (Generic XY-MD02 / InnovoHT N434E01), unified temp/humidity, min_version 2026.6.1"
+        "summary": "Innovo Redbox Fury 2026.06.20.10 - status LED internal (no HA flicker) + corrected N434E01 register map (offset temp decode)"
       }
     }
   ]
