@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.21.13",
+  "version": "2026.06.21.14",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "88dfed698e06d99f7d6035d22e1e1190",
+        "md5": "9ab0e047973675d335afe94c8ada3365",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.21.13 - /register page styled to match onboarding + fields dealername/email/location/project"
+        "summary": "Innovo Redbox Fury 2026.06.21.14 - Phase 3: heartbeat (reuse /api/heartbeat) + remote command poll (restart/update/check_now). Dormant."
       }
     }
   ]
