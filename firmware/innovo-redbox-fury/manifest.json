@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.20.11",
+  "version": "2026.06.21.12",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "83b55fbce8c3cd36dd64ed9ff230a906",
+        "md5": "034d57fd382993b909232549b531e0b3",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.20.11 - OTA check every 720min + post-boot re-check (clears stale update-available LED after install)"
+        "summary": "Innovo Redbox Fury 2026.06.21.12 - cloud onboarding + /register dealer page (dormant: Cloud Check-in switch OFF, placeholder backend URLs for flow testing)"
       }
     }
   ]
