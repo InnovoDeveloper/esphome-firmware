@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.22.17",
+  "version": "2026.06.22.20",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "3447feefc460271b75a0b7b4997bf407",
+        "md5": "1fad0bd1751b58d1570689957740d0ac",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.22.17 - /register now shows cloud registration status (already-registered banner), submit confirms + auto-refreshes. Includes .16 async-claim reboot fix."
+        "summary": "Innovo Redbox Fury 2026.06.22.20 - onboarding EULA->Registration(mandatory)->WiFi; EULA acceptance recorded; Cloud Check-in default ON; async-claim reboot fix; /register cloud status."
       }
     }
   ]
