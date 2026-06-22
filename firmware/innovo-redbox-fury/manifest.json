@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.22.16",
+  "version": "2026.06.22.17",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "7d9ad5f26b27507af7a3759a319909be",
+        "md5": "3447feefc460271b75a0b7b4997bf407",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.22.16 - FIX: dealer claim sent async from loop (not web handler) -> no watchdog reboot / OTA rollback on register."
+        "summary": "Innovo Redbox Fury 2026.06.22.17 - /register now shows cloud registration status (already-registered banner), submit confirms + auto-refreshes. Includes .16 async-claim reboot fix."
       }
     }
   ]
