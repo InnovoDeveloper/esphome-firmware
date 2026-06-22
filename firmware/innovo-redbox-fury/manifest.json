@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.22.15",
+  "version": "2026.06.22.16",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "a90c9c6dc97aeb0d0e9af4853240baac",
+        "md5": "7d9ad5f26b27507af7a3759a319909be",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.22.15 - real backend URLs baked (lambda live). Cloud Check-in still default OFF (toggle to test)."
+        "summary": "Innovo Redbox Fury 2026.06.22.16 - FIX: dealer claim sent async from loop (not web handler) -> no watchdog reboot / OTA rollback on register."
       }
     }
   ]
