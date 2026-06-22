@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.22.21",
+  "version": "2026.06.22.22",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "d2b2690d1a56cebc13130f7d9221a2c4",
+        "md5": "e809c6c5b27130ae39b7e79b48cffbb4",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.22.21 - heartbeat now reports device telemetry (mac/ip/ssid/wifi signal/uptime). EULA->Register->WiFi onboarding, Cloud Check-in ON."
+        "summary": "Innovo Redbox Fury 2026.06.22.22 - heartbeat uptime now reports elapsed seconds (was boot timestamp)."
       }
     }
   ]
