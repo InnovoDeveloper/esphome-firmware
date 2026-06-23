@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.23.26",
+  "version": "2026.06.23.27",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "f42110b3b30931ce375e0ee4b414f718",
+        "md5": "369e42efc101da2d51f0da2c90a31676",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.23.26 - added Pink trigger colour (door3 default Pink); Temperature/Humidity Offset numbers (+/- decimal, default 0) applied to the unified sensor outputs."
+        "summary": "Innovo Redbox Fury 2026.06.23.27 - Pink lighter (was too close to magenta); Temperature Offset is now a unitless number (no degree conversion)."
       }
     }
   ]
