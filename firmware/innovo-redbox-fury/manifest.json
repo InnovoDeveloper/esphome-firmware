@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.22.22",
+  "version": "2026.06.22.23",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "e809c6c5b27130ae39b7e79b48cffbb4",
+        "md5": "d93d6dff7c9b26e5a3b5e2959d8bc160",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.22.22 - heartbeat uptime now reports elapsed seconds (was boot timestamp)."
+        "summary": "Innovo Redbox Fury 2026.06.22.23 - RS485/modbus modularized (_modbus-base); per-door diagnostic trigger colours (relay=fast, input=medium); door1 default Magenta. Uptime=elapsed seconds."
       }
     }
   ]
