@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.22.24",
+  "version": "2026.06.22.25",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "ceaeeffbe147e5f47bc37cf2b55eb9b3",
+        "md5": "609a72deeb15ec9c1032104c2aaeebe1",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.22.24 - Modbus single-control: 'Attached Module' select (default None=off, pick a module=auto-on); removed separate Modbus Enabled switch. Per-door trigger colours (door1=Magenta)."
+        "summary": "Innovo Redbox Fury 2026.06.22.25 - door2 default White (green=OTA flash); Cloud Device ID now publishes on boot (was Unknown)."
       }
     }
   ]
