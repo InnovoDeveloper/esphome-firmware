@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.22.25",
+  "version": "2026.06.23.26",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "609a72deeb15ec9c1032104c2aaeebe1",
+        "md5": "f42110b3b30931ce375e0ee4b414f718",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.22.25 - door2 default White (green=OTA flash); Cloud Device ID now publishes on boot (was Unknown)."
+        "summary": "Innovo Redbox Fury 2026.06.23.26 - added Pink trigger colour (door3 default Pink); Temperature/Humidity Offset numbers (+/- decimal, default 0) applied to the unified sensor outputs."
       }
     }
   ]
