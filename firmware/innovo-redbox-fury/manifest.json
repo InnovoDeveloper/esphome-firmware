@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.24.29",
+  "version": "2026.06.24.30",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "6ee5be180b2d2fa73926fa49448a9259",
+        "md5": "1f1e5afd1cd997e8747993545045b2e2",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.24.29 - persist cloud token in a fixed char buffer (std::array) so it survives reboots; stops false 'down' + repeated re-registration that std::string restore caused."
+        "summary": "Innovo Redbox Fury 2026.06.24.30 - immediate heartbeat ~10s after WiFi connect (reboot reports 'up' in seconds, not 5 min); remove the Shutdown button (ESP32 software-halt with no remote recovery, no use case)."
       }
     }
   ]
