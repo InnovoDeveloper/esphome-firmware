@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.23.27",
+  "version": "2026.06.24.28",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "369e42efc101da2d51f0da2c90a31676",
+        "md5": "37358872439461fcb55ffcd8b955ad35",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.23.27 - Pink lighter (was too close to magenta); Temperature Offset is now a unitless number (no degree conversion)."
+        "summary": "Innovo Redbox Fury 2026.06.24.28 - self-heal: re-onboard when the cloud token is empty (recovers a device that lost its token and was wrongly reported 'down' with heartbeat HTTP 400)."
       }
     }
   ]
