@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.24.28",
+  "version": "2026.06.24.29",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "37358872439461fcb55ffcd8b955ad35",
+        "md5": "6ee5be180b2d2fa73926fa49448a9259",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.24.28 - self-heal: re-onboard when the cloud token is empty (recovers a device that lost its token and was wrongly reported 'down' with heartbeat HTTP 400)."
+        "summary": "Innovo Redbox Fury 2026.06.24.29 - persist cloud token in a fixed char buffer (std::array) so it survives reboots; stops false 'down' + repeated re-registration that std::string restore caused."
       }
     }
   ]
