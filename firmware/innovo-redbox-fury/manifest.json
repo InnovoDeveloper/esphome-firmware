@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.27.41",
+  "version": "2026.06.27.42",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "09038376d3751648f4a0d3885ffc21c2",
+        "md5": "c1523c1950490d32445d4a60a8ef50a5",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.27.41 - clean revert of GPIO0 debug experiments. Door1/GPIO0 false-open confirmed a BOARD hardware issue (free chip reads fine); needs external pull-up."
+        "summary": "Innovo Redbox Fury 2026.06.27.42 - cloud_beat: 1s yield between heartbeat + command HTTPS POSTs so they don't stack into one ~3s loop block (interval-took-too-long warning)."
       }
     }
   ]
