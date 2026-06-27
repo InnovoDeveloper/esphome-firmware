@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.27.35",
+  "version": "2026.06.27.36",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "ce0939b3787171423bb6047fea04dcb0",
+        "md5": "215577cee376f7512e2d6afccf8cce8c",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.27.35 - future-proof ESPHome deprecations: web_server version 3 (object-ID REST URLs go away 2026.7.0) + captive_portal url()->url_to() (removed 2026.9.0)."
+        "summary": "Innovo Redbox Fury 2026.06.27.36 - REVERT door GPIO re-init auto-heal: it disturbed GPIO0's pull and forced a false 'open' (Clear Faults + every 2min). Clear Faults now re-syncs only."
       }
     }
   ]
