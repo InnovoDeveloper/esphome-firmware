@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.24.30",
+  "version": "2026.06.27.31",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "1f1e5afd1cd997e8747993545045b2e2",
+        "md5": "c65dd6408a698886b99efa47b24a7c98",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.24.30 - immediate heartbeat ~10s after WiFi connect (reboot reports 'up' in seconds, not 5 min); remove the Shutdown button (ESP32 software-halt with no remote recovery, no use case)."
+        "summary": "Innovo Redbox Fury 2026.06.27.31 - LED superseding priority (door trigger > door open > status) with status surfacing ~4s every 60s while a door is open; door-input debounce 10ms->50ms."
       }
     }
   ]
