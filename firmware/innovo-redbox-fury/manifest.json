@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.27.42",
+  "version": "2026.06.27.45",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "c1523c1950490d32445d4a60a8ef50a5",
+        "md5": "05c81d4d292ce4e352fcd788a7898f87",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.27.42 - cloud_beat: 1s yield between heartbeat + command HTTPS POSTs so they don't stack into one ~3s loop block (interval-took-too-long warning)."
+        "summary": "Innovo Redbox Fury 2026.06.27.45 - clean (trace removed); green OTA-flash now only when manifest is newer than installed (no false downgrade flag). Door1/GPIO0 false-open traced to floating 12V ground - earth it."
       }
     }
   ]
