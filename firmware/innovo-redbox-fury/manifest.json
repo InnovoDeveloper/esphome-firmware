@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.27.31",
+  "version": "2026.06.27.32",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "c65dd6408a698886b99efa47b24a7c98",
+        "md5": "5dd2d424ca119d6be8c56b54377a9894",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.27.31 - LED superseding priority (door trigger > door open > status) with status surfacing ~4s every 60s while a door is open; door-input debounce 10ms->50ms."
+        "summary": "Innovo Redbox Fury 2026.06.27.32 - per-door OPEN colour (door's colour solid; Door5=yellow), 250ms door debounce, Clear Faults button, 10s status blip every 60s."
       }
     }
   ]
