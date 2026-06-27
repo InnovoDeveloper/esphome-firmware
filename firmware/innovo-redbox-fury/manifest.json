@@ -1,15 +1,15 @@
 {
   "name": "Innovo Redbox Fury",
-  "version": "2026.06.27.33",
+  "version": "2026.06.27.34",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "982b69d8e3905861f14c5afcbf8ef244",
+        "md5": "ae34dde0cdebfac6df4f0506924493cb",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.27.33 - WiFi-no-HA now SOLID GREEN (was flashing blue), HA SOLID BLUE; Clear Faults purple ack flash ~10s."
+        "summary": "Innovo Redbox Fury 2026.06.27.34 - door-input GPIO re-init auto-heal (every 2min + on Clear Faults) to self-clear a latched false 'open' (GPIO0/GPIO2 runtime glitch) without a reboot."
       }
     }
   ]
