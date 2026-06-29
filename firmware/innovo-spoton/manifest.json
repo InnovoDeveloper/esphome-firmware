@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.28.3",
+  "version": "2026.06.28.4",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "767a737f6cb3383ad657e5a3700cc788",
+        "md5": "09cab6eaeb6f2d083dd61ebde4b2a10d",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn 2026.06.28.3 - enable onboard Xiao-C6 antenna (GPIO3/GPIO14); EULA device name now dynamic."
+        "summary": "Innovo SpotOn 2026.06.28.4 - registers as 'spoton' (was redboxfury); proximity strip internal + 'Proximity Indicator' HA switch so HA can't override the distance display."
       }
     }
   ]
