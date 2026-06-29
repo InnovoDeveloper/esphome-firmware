@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.28.1",
+  "version": "2026.06.28.2",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "d033bdf2a11c1aea9bd01003633e9ab5",
+        "md5": "3349a3566195ce9c51047f3511f678ad",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn v1 - ultrasonic proximity bar on the modular stack (onboarding/EULA/registration reused)."
+        "summary": "Innovo SpotOn 2026.06.28.2 - onboarding/setup shows PURPLE (was red); red now only for WiFi-lost; proximity bar when operational."
       }
     }
   ]
