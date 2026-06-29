@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.29.8",
+  "version": "2026.06.29.9",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "befb31f2f8b78c5ef75b4bdc43fcc260",
+        "md5": "cc82c19f7aad1348c895d220bc8bcfa9",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn 2026.06.29.8 - median(5) spike filter ahead of the smoothing EMA to reject false-echo outliers."
+        "summary": "Innovo SpotOn 2026.06.29.9 - Smoothing range narrowed to 1-10 (default 5); median spike filter handles outliers."
       }
     }
   ]
