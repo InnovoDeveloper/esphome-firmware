@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.28.4",
+  "version": "2026.06.29.5",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "09cab6eaeb6f2d083dd61ebde4b2a10d",
+        "md5": "294b6b02124c2d84e6b27de6e51922e6",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn 2026.06.28.4 - registers as 'spoton' (was redboxfury); proximity strip internal + 'Proximity Indicator' HA switch so HA can't override the distance display."
+        "summary": "Innovo SpotOn 2026.06.29.5 - tuning (brightness/active ranges/per-band colour/direction/flash/valid window/temp comp) + Proximity Alert binary sensor, Proximity Zone, auto-off-when-idle, threshold relay (GPIO16)."
       }
     }
   ]
