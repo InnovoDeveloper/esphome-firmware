@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.29.7",
+  "version": "2026.06.29.8",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "8b507939a7902c7e20a60e53debe9157",
+        "md5": "befb31f2f8b78c5ef75b4bdc43fcc260",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn 2026.06.29.7 - fix: auto-off motion reference re-anchors only on detected motion, so heavy smoothing no longer wrongly blanks the bar."
+        "summary": "Innovo SpotOn 2026.06.29.8 - median(5) spike filter ahead of the smoothing EMA to reject false-echo outliers."
       }
     }
   ]
