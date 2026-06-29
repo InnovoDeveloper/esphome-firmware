@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.29.5",
+  "version": "2026.06.29.6",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "294b6b02124c2d84e6b27de6e51922e6",
+        "md5": "cf744d8f0f5d81cd350eaf17321505dc",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn 2026.06.29.5 - tuning (brightness/active ranges/per-band colour/direction/flash/valid window/temp comp) + Proximity Alert binary sensor, Proximity Zone, auto-off-when-idle, threshold relay (GPIO16)."
+        "summary": "Innovo SpotOn 2026.06.29.6 - tunable Smoothing (EMA) + Motion Threshold so auto-off can engage; distance is now smoothed."
       }
     }
   ]
