@@ -7,7 +7,7 @@
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "01ef680f108a349b968038a99b6b65db",
+        "md5": "d033bdf2a11c1aea9bd01003633e9ab5",
         "path": "innovo-spoton.ota.bin",
         "summary": "Innovo SpotOn v1 - ultrasonic proximity bar on the modular stack (onboarding/EULA/registration reused)."
       }
