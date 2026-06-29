@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.28.2",
+  "version": "2026.06.28.3",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "3349a3566195ce9c51047f3511f678ad",
+        "md5": "767a737f6cb3383ad657e5a3700cc788",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn 2026.06.28.2 - onboarding/setup shows PURPLE (was red); red now only for WiFi-lost; proximity bar when operational."
+        "summary": "Innovo SpotOn 2026.06.28.3 - enable onboard Xiao-C6 antenna (GPIO3/GPIO14); EULA device name now dynamic."
       }
     }
   ]
