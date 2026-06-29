@@ -1,0 +1,16 @@
+{
+  "name": "Innovo SpotOn",
+  "version": "2026.06.28.1",
+  "home_assistant_domain": "esphome",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "ota": {
+        "md5": "01ef680f108a349b968038a99b6b65db",
+        "path": "innovo-spoton.ota.bin",
+        "summary": "Innovo SpotOn v1 - ultrasonic proximity bar on the modular stack (onboarding/EULA/registration reused)."
+      }
+    }
+  ]
+}
