@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.29.6",
+  "version": "2026.06.29.7",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "cf744d8f0f5d81cd350eaf17321505dc",
+        "md5": "8b507939a7902c7e20a60e53debe9157",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn 2026.06.29.6 - tunable Smoothing (EMA) + Motion Threshold so auto-off can engage; distance is now smoothed."
+        "summary": "Innovo SpotOn 2026.06.29.7 - fix: auto-off motion reference re-anchors only on detected motion, so heavy smoothing no longer wrongly blanks the bar."
       }
     }
   ]
