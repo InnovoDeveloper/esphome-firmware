@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.29.10",
+  "version": "2026.06.30.11",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "c664db04091ae742d71288fd6076fd95",
+        "md5": "f960b3876a28c89a2d154c03005b1ce1",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn 2026.06.29.10 - own per-product factory key (innovo_factory_key_spoton); registers cleanly as spoton-<mac>."
+        "summary": "Innovo SpotOn 2026.06.30.11 - server-driven heartbeat cadence: honors interval_sec/retry_sec from /api/heartbeat (+/-15% jitter, fast retry), fallback 300s."
       }
     }
   ]
