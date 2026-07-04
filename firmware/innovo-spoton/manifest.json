@@ -1,15 +1,15 @@
 {
   "name": "Innovo SpotOn",
-  "version": "2026.06.30.11",
+  "version": "2026.07.03.12",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C6",
       "ota": {
-        "md5": "f960b3876a28c89a2d154c03005b1ce1",
+        "md5": "ae8519563a8f6d18e26a6ea67f3bcb88",
         "path": "innovo-spoton.ota.bin",
-        "summary": "Innovo SpotOn 2026.06.30.11 - server-driven heartbeat cadence: honors interval_sec/retry_sec from /api/heartbeat (+/-15% jitter, fast retry), fallback 300s."
+        "summary": "Innovo SpotOn 2026.07.03.12 - speed-adaptive distance filter (snaps on fast moves / new objects, smooths when static) + median reduced to 3 + Fast-Move Snap control."
       }
     }
   ]
