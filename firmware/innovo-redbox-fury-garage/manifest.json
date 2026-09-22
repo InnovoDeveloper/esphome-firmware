@@ -1,0 +1,16 @@
+{
+  "name": "Innovo RedBox Fury Garage",
+  "version": "2026.09.22.03",
+  "home_assistant_domain": "esphome",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "ota": {
+        "md5": "3589959c355b6f0503cdfd488505fb42",
+        "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury-garage/innovo-redbox-fury-garage.ota.bin",
+        "summary": "Innovo RedBox Fury Garage 2026.09.22.03 - first build of the forked Garage variant. Pre-motion warning is now a per-door Warning Time plus a Pre-Motion Warning binary sensor for Home Assistant to drive a lamp or Zigbee siren; the device makes no sound itself. Door entity naming unified (Door 1-4 everywhere, no zero padding). Door 3 default colour green, cycle time default 2s, new Restore Default Settings button."
+      }
+    }
+  ]
+}
