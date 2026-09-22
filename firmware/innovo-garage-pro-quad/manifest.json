@@ -1,0 +1,16 @@
+{
+  "name": "Innovo RedBox Fury (migration from Garage Pro Quad)",
+  "version": "2026.09.21.48",
+  "home_assistant_domain": "esphome",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "ota": {
+        "md5": "73ec3c1c665ff8076d18e3f09b48d52f",
+        "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
+        "summary": "MIGRATION BRIDGE. 'Garage Pro Quad' was renamed to 'RedBox Fury'; this path exists only so units still polling the old manifest URL can move forward. It serves the RedBox Fury 2026.09.21.48 binary (identical ESP32-C3 hardware, fits the old asymmetric app1 slot). After updating, the device reports as innovo-redbox-fury and its Home Assistant entity IDs change accordingly."
+      }
+    }
+  ]
+}

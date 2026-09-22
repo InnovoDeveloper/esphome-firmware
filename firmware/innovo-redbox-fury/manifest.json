@@ -1,15 +1,15 @@
 {
-  "name": "Innovo Redbox Fury",
-  "version": "2026.06.30.46",
+  "name": "Innovo RedBox Fury",
+  "version": "2026.09.21.48",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "beca2b5e36eb131f0d4c376d0618ac8a",
+        "md5": "73ec3c1c665ff8076d18e3f09b48d52f",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo Redbox Fury 2026.06.30.46 - server-driven heartbeat cadence (honors interval_sec/retry_sec from /api/heartbeat, +/-15% jitter, fast retry, fallback 300s)."
+        "summary": "Innovo RedBox Fury 2026.09.21.48 - ESPHome 2026.9.0. Captive portal rebased on current upstream (SSID JSON escaping, scan-results locking, NVS writes deferred off the HTTP thread, duplicate AP de-dup). Orbitron webfont embedded and served from the device so onboarding is branded without internet. 30-minute provisioning window closes the setup AP. Symmetric dual-OTA partition table on USB-flashed units."
       }
     }
   ]
