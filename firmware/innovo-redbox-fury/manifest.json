@@ -1,15 +1,15 @@
 {
   "name": "Innovo RedBox Fury",
-  "version": "2026.09.21.49",
+  "version": "2026.09.21.50",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "09b7b3cbbc9fc5be3b2908f29b84496c",
+        "md5": "21795dbdeeb9c73ab3741dafa262efc3",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo RedBox Fury 2026.09.21.49 - fixes the Set Logging Level mapping. ESPHome has eight log levels with CONFIG at 4; the old table omitted it, so every level from DEBUG up was off by one (selecting DEBUG actually set CONFIG) and VERY_VERBOSE was unreachable. Now uses ESPHOME_LOG_LEVEL_* constants and exposes CONFIG."
+        "summary": "Innovo RedBox Fury 2026.09.21.50 - relay outputs reworked into two orthogonal settings. 'Door XX Output Mode' (Momentary/Latching) decides whether a trigger returns to rest; 'Door XX Idle State' (Normally Open/Normally Closed) decides where rest is, and is now reapplied at boot instead of every relay being forced off. Defaults are unchanged for garage use: Normally Open + Momentary + 3s."
       }
     }
   ]
