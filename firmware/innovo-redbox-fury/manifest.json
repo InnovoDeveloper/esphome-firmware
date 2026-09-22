@@ -1,15 +1,15 @@
 {
   "name": "Innovo RedBox Fury",
-  "version": "2026.09.21.48",
+  "version": "2026.09.21.49",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "73ec3c1c665ff8076d18e3f09b48d52f",
+        "md5": "09b7b3cbbc9fc5be3b2908f29b84496c",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury/innovo-redbox-fury.ota.bin",
-        "summary": "Innovo RedBox Fury 2026.09.21.48 - ESPHome 2026.9.0. Captive portal rebased on current upstream (SSID JSON escaping, scan-results locking, NVS writes deferred off the HTTP thread, duplicate AP de-dup). Orbitron webfont embedded and served from the device so onboarding is branded without internet. 30-minute provisioning window closes the setup AP. Symmetric dual-OTA partition table on USB-flashed units."
+        "summary": "Innovo RedBox Fury 2026.09.21.49 - fixes the Set Logging Level mapping. ESPHome has eight log levels with CONFIG at 4; the old table omitted it, so every level from DEBUG up was off by one (selecting DEBUG actually set CONFIG) and VERY_VERBOSE was unreachable. Now uses ESPHOME_LOG_LEVEL_* constants and exposes CONFIG."
       }
     }
   ]
