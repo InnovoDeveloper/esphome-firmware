@@ -1,15 +1,15 @@
 {
   "name": "Innovo RedBox Fury Garage",
-  "version": "2026.09.23.08",
+  "version": "2026.09.23.09",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "3eaae8a5aed3037539598507986a53ba",
+        "md5": "1abc16ee5b1d57b6c0201c29bcfdf6e5",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury-garage/innovo-redbox-fury-garage.ota.bin",
-        "summary": "Innovo RedBox Fury Garage 2026.09.23.08 - the setup access point is now WPA2 protected instead of open. Passphrase: fury4444. The device re-raises this AP ap_timeout (10s) after ANY loss of the station link, on a provisioned unit as well as a fresh one, and the captive portal accepts /wifisave from whoever joins - so while it was open, a brief router outage was enough for a passer-by to move a working garage door controller onto their own network. The passphrase is fleet-wide and printed on the unit, so it is a deterrent rather than a secret; the Improv-BLE authorizer added in .05 remains the stronger control. INSTALLERS: joining the setup network by hand now requires the passphrase. The Innovo app supplies it automatically and also displays it on the Connect step."
+        "summary": "Innovo RedBox Fury Garage 2026.09.23.09 - the five-press physical factory reset never worked. Two independent bugs, both in the counter, not the reset itself. (1) The on_boot block ran at priority 800, the same as RestoringGlobalsComponent's setup_priority::HARDWARE; Application::setup() breaks that tie by registration order with a stable sort and codegen registers the trigger first, so the increment happened before the global loaded from NVS and was immediately overwritten. Moved to 700. (2) preferences flash_write_interval is 1min and a hardware RST gives no on_shutdown, so every press in a 10-second sequence landed inside the write window and was lost; the counter now flushes with update() + global_preferences->sync() on both the increment and the 10-second clear. Once the counter can reach 5, the reset itself was always correct: factory_reset calls global_preferences->reset(), which erases the NVS namespace holding the saved WiFi credentials."
       }
     }
   ]
