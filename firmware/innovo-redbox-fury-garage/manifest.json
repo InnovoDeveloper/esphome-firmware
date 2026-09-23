@@ -1,15 +1,15 @@
 {
   "name": "Innovo RedBox Fury Garage",
-  "version": "2026.09.23.06",
+  "version": "2026.09.23.07",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "de9c1274ab2774a84b2bcc868eaddfb6",
+        "md5": "b00871cc9e86e6302fa5360d0ed6043f",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury-garage/innovo-redbox-fury-garage.ota.bin",
-        "summary": "Innovo RedBox Fury Garage 2026.09.23.06 - closes a gap where dealer registration was silently lost when a unit was provisioned over Improv-BLE. /registersave lives on the captive portal, which the device tears down the moment it associates, so a Bluetooth-provisioned unit had nowhere to post the claim. The same NVS-backed claim queue is now exposed as entities - Registration Dealer / Email / Location / Project / EULA Version, Registration EULA Accepted, and a Submit Registration button - so a client can queue the identical claim over the REST or native API. The device still sends it under its own device_token, so the trust model is unchanged. Fields cap at 63 characters to match the claim globals' max_restore_data_length, beyond which a value is silently not persisted. All seven entities are disabled_by_default installer tooling and do not appear in Home Assistant by default."
+        "summary": "Innovo RedBox Fury Garage 2026.09.23.07 - the Registration text entities added in .06 now publish their new value immediately on set, instead of only on the 60s template poll. A client that wrote a field and read it straight back saw the OLD value for up to a minute and could not distinguish a slow publish from a write that never landed, which defeats the point of verifying the write. The stored value was always correct; only the reported state lagged."
       }
     }
   ]
