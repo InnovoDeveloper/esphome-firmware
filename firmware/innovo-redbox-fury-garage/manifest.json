@@ -1,15 +1,15 @@
 {
   "name": "Innovo RedBox Fury Garage",
-  "version": "2026.09.23.01",
+  "version": "2026.09.23.05",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "f8d758ac757100b1248a6fd5435a84ba",
+        "md5": "be764686c2ac9edcdd26b507e197a7ac",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury-garage/innovo-redbox-fury-garage.ota.bin",
-        "summary": "Innovo RedBox Fury Garage 2026.09.23.01 - adds per-door Open Travel Time and Close Travel Time (5-60s, default 15) for doors 1-4. A single reed switch cannot report Opening or Closing: it leaves 'closed' a second into travel and never reports arrival at fully open. Clients use these to derive motion state. Door 5 is sensor-only and has none."
+        "summary": "Innovo RedBox Fury Garage 2026.09.23.05 - SECURITY: Improv-over-BLE now requires an authorizer that is only active while the unit has never completed onboarding. Previously (authorizer: none) any provisioned unit that lost its router for 90s restarted Improv already AUTHORIZED, letting anyone in BLE range re-provision it onto another network; a failed attempt also wiped the saved credentials via clear_sta(). Factory reset re-opens BLE provisioning. Also tiers 36 installer-set-once entities (output mode, idle state, cycle/warning/travel times, trigger colour, per-door reporting, logging level, trigger OTA) as disabled_by_default, cutting Home Assistant's first-open list from 70 to 34. Tiered entities remain fully readable and writable over the REST/SSE API, so the Innovo Android app is unaffected; in Home Assistant they appear under '+N entities not shown' and can be enabled individually."
       }
     }
   ]
