@@ -1,15 +1,15 @@
 {
   "name": "Innovo RedBox Fury Garage",
-  "version": "2026.09.23.05",
+  "version": "2026.09.23.06",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "be764686c2ac9edcdd26b507e197a7ac",
+        "md5": "de9c1274ab2774a84b2bcc868eaddfb6",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury-garage/innovo-redbox-fury-garage.ota.bin",
-        "summary": "Innovo RedBox Fury Garage 2026.09.23.05 - SECURITY: Improv-over-BLE now requires an authorizer that is only active while the unit has never completed onboarding. Previously (authorizer: none) any provisioned unit that lost its router for 90s restarted Improv already AUTHORIZED, letting anyone in BLE range re-provision it onto another network; a failed attempt also wiped the saved credentials via clear_sta(). Factory reset re-opens BLE provisioning. Also tiers 36 installer-set-once entities (output mode, idle state, cycle/warning/travel times, trigger colour, per-door reporting, logging level, trigger OTA) as disabled_by_default, cutting Home Assistant's first-open list from 70 to 34. Tiered entities remain fully readable and writable over the REST/SSE API, so the Innovo Android app is unaffected; in Home Assistant they appear under '+N entities not shown' and can be enabled individually."
+        "summary": "Innovo RedBox Fury Garage 2026.09.23.06 - closes a gap where dealer registration was silently lost when a unit was provisioned over Improv-BLE. /registersave lives on the captive portal, which the device tears down the moment it associates, so a Bluetooth-provisioned unit had nowhere to post the claim. The same NVS-backed claim queue is now exposed as entities - Registration Dealer / Email / Location / Project / EULA Version, Registration EULA Accepted, and a Submit Registration button - so a client can queue the identical claim over the REST or native API. The device still sends it under its own device_token, so the trust model is unchanged. Fields cap at 63 characters to match the claim globals' max_restore_data_length, beyond which a value is silently not persisted. All seven entities are disabled_by_default installer tooling and do not appear in Home Assistant by default."
       }
     }
   ]
