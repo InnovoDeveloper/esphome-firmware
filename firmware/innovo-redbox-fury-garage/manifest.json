@@ -1,15 +1,15 @@
 {
   "name": "Innovo RedBox Fury Garage",
-  "version": "2026.09.23.07",
+  "version": "2026.09.23.08",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "b00871cc9e86e6302fa5360d0ed6043f",
+        "md5": "3eaae8a5aed3037539598507986a53ba",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury-garage/innovo-redbox-fury-garage.ota.bin",
-        "summary": "Innovo RedBox Fury Garage 2026.09.23.07 - the Registration text entities added in .06 now publish their new value immediately on set, instead of only on the 60s template poll. A client that wrote a field and read it straight back saw the OLD value for up to a minute and could not distinguish a slow publish from a write that never landed, which defeats the point of verifying the write. The stored value was always correct; only the reported state lagged."
+        "summary": "Innovo RedBox Fury Garage 2026.09.23.08 - the setup access point is now WPA2 protected instead of open. Passphrase: fury4444. The device re-raises this AP ap_timeout (10s) after ANY loss of the station link, on a provisioned unit as well as a fresh one, and the captive portal accepts /wifisave from whoever joins - so while it was open, a brief router outage was enough for a passer-by to move a working garage door controller onto their own network. The passphrase is fleet-wide and printed on the unit, so it is a deterrent rather than a secret; the Improv-BLE authorizer added in .05 remains the stronger control. INSTALLERS: joining the setup network by hand now requires the passphrase. The Innovo app supplies it automatically and also displays it on the Connect step."
       }
     }
   ]
