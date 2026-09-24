@@ -1,0 +1,23 @@
+# THIS REPOSITORY IS PUBLIC (github.com/InnovoDeveloper/esphome-firmware,
+# private: false). Anything committed here is world-readable forever, including in
+# history after a later deletion.
+#
+# A 64-char factory key was previously recoverable with `strings` from an
+# anonymously downloaded .ota.bin in this repo. Production images no longer contain
+# any secret, but a FACTORY image does -- it has the factory key and the factory
+# WiFi credentials compiled in. It must never land here.
+#
+# These patterns are a safety net, not the control. The real control is that factory
+# builds use a different devicename (innovo-rbfg-fact) and therefore a different
+# build directory from the one the publish step copies out of.
+*factory*
+*FACTORY*
+*.local.env
+factory-keys*
+secrets.yaml
+*.elf
+*.map
+
+# macOS metadata
+.DS_Store
+._*
