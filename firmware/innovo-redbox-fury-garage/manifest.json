@@ -1,15 +1,15 @@
 {
   "name": "Innovo RedBox Fury Garage",
-  "version": "2026.09.23.09",
+  "version": "2026.09.23.10",
   "home_assistant_domain": "esphome",
   "new_install_prompt_erase": false,
   "builds": [
     {
       "chipFamily": "ESP32-C3",
       "ota": {
-        "md5": "1abc16ee5b1d57b6c0201c29bcfdf6e5",
+        "md5": "5f592455c4ed4e04bf8b0cf6e28cf6e9",
         "path": "https://github.com/InnovoDeveloper/esphome-firmware/raw/refs/heads/main/firmware/innovo-redbox-fury-garage/innovo-redbox-fury-garage.ota.bin",
-        "summary": "Innovo RedBox Fury Garage 2026.09.23.09 - the five-press physical factory reset never worked. Two independent bugs, both in the counter, not the reset itself. (1) The on_boot block ran at priority 800, the same as RestoringGlobalsComponent's setup_priority::HARDWARE; Application::setup() breaks that tie by registration order with a stable sort and codegen registers the trigger first, so the increment happened before the global loaded from NVS and was immediately overwritten. Moved to 700. (2) preferences flash_write_interval is 1min and a hardware RST gives no on_shutdown, so every press in a 10-second sequence landed inside the write window and was lost; the counter now flushes with update() + global_preferences->sync() on both the increment and the 10-second clear. Once the counter can reach 5, the reset itself was always correct: factory_reset calls global_preferences->reset(), which erases the NVS namespace holding the saved WiFi credentials."
+        "summary": "Innovo RedBox Fury Garage 2026.09.23.10 - FIXES A REGRESSION IN .05 that broke Improv-BLE provisioning on factory-fresh units. The authorizer was a template binary_sensor with a lambda; TemplateBinarySensor is setup_priority::HARDWARE (800) and its setup() calls loop() immediately, so it published ON about 500 priority levels before esp32_improv registered its state callback at AFTER_BLUETOOTH (300). Improv never saw the transition, authorized_start_ stayed 0, and because BinarySensor::send_state_internal() dedups, no later publish of the same value could fire the callback either - so Improv sat in AWAITING_AUTHORIZATION forever and refused WIFI_SETTINGS with ERROR_NOT_AUTHORIZED. The gate locked out everyone instead of only onboarded units. The authorizer now carries NO lambda (so setup() disable_loop()s and publishes nothing) and is published explicitly from on_boot at priority 200, below Improv's 300. Both outcomes are now logged at ERROR level so they are visible at the field log level: 'Improv BLE provisioning AUTHORIZED' or '... LOCKED (already onboarded; factory reset to re-open)'."
       }
     }
   ]
